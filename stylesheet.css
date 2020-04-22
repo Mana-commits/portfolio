@@ -132,23 +132,66 @@ th,td{
 	width: 100%;
 }
 
+/*テーブルのスクロール設定*/
+@media only screen and (max-width: 665px) {
+	.skills-content table {
+	  white-space: nowrap;
+	  overflow-x: auto; 
+	  -webkit-overflow-scrolling: touch;
+	}
+  }
+
+
 .skills-content th{
 	text-align: left;
 	padding: 8px 32px;
 }
 
+
 /*garally*/
 .garally-contents{
 	padding: 100px 60px;
 	background-color: #F8FAD4;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.slide{
+	border: .8px solid #707070;
+	min-height: 427px;
+	position: relative;
+}
+
+.slide-img{
+	height: 70%;
+}
+
+.slide-text{
+	height: 30%;
+	width: 100%;
+	border-top: .8px solid #707070;
+	position: absolute;
+	bottom: 0;
+}
+
+.nonactive{
+	display: none;
 }
 
 /*contact*/
 .contact-contents{
 	background-color: #F0D0E4;
+	text-align: center;
+	min-height: 200px;
 }
-.contact-contentsbox{
-	margin: 100px 0;
+.contact-contents{
 	padding: 40px 0;
 	text-align: center;
+}
+
+/*footer*/
+.footer-contents{
+	text-align: center;
+	border: .8px solid #707070;
 }
