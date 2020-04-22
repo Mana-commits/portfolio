@@ -1,0 +1,99 @@
+body {
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+	color: #707070;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+/*wrap*/
+
+
+/*nav-bar*/
+.navbar-contents{
+	min-height: 25vh;
+	background-color: blue;
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar-contents-name{
+	line-height: 53px;
+	margin: auto;
+	width: 50%;
+	background-color: red;
+}
+
+.navbar-contents-humberger{
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+}
+
+
+/*hero*/
+.hero-contents{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-title-box{
+	height: 40vh;
+	width: auto;
+	background-color: #F0D0E4;
+	text-align: center;
+}
+
+.hero-imgbox{
+	height: 60vh;
+	width: auto;
+	background-color: #FAFBDF;
+}
+
+/*profile*/
+
+.profile-contents{
+	padding: 100px 60px;
+	background-color: #E4EFB9;
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-title{
+	order: 1;
+}
+
+.profile-imgbox{
+	margin: 16px auto 40px;
+	order: 2;
+	height: 245px;
+	width: 381px;
+}
+
+.profile-textbox{
+	order: 3;
+}
+
+/*skills*/
+.skills-contents{
+	padding: 100px 16px;
+}
+
+/*garally*/
+.garally-contents{
+	padding: 100px 60px;
+	background-color: #F8FAD4;
+}
+
+/*contact*/
+.contact-contents{
+	background-color: #F0D0E4;
+}
+.contact-contentsbox{
+	margin: 100px 0;
+	padding: 40px 0;
+	text-align: center;
+}
