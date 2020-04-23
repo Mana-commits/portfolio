@@ -8,47 +8,50 @@ h1 {
 	letter-spacing: 20px;
 }
 
-h2, h3{
+h2, h3 {
 	letter-spacing: 4px;
 }
 
-th,td{
+th, td {
 	letter-spacing: 4px;
 	font-weight: normal;
 }
 
 /*wrap*/
 
-
 /*nav-bar*/
-.navbar-contents{
+
+.navbar-contents {
 	background-color: #fff;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.navbar-contents-name{
+.navbar-contents-name {
 	line-height: 53px;
-	margin: auto;
+	margin-left: 64px;
 	width: 50%;
 }
 
-.navbar-contents-humberger{
+.navbar-contents-name h1{
+	font-size: 24px;
+}
+
+.navbar-contents-humberger {
 	position: relative;
 	width: 50px;
 	height: 50px;
 	margin: auto;
 }
 
-.navbar-contents-humberger,
-.navbar-contents-humberger span{
+.navbar-contents-humberger, .navbar-contents-humberger span {
 	display: inline-block;
 	box-sizing: border-box;
 	transition: all .4s;
 }
 
-.navbar-contents-humberger span{
+.navbar-contents-humberger span {
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -56,32 +59,48 @@ th,td{
 	background-color: #707070;
 }
 
-.navbar-contents-humberger span.middle{
+.navbar-contents-humberger span.middle {
 	margin-top: 16px;
 }
 
-.navbar-contents-humberger span.bottom{
+.navbar-contents-humberger span.bottom {
 	margin-top: 32px;
 }
 
+.navbar-slide{
+	height: 100vh;
+	width: 50%;
+	background-color: #fff;
+	box-sizing: border-box;
+}
 
+.navbar-slide ul{
+	list-style: none;
+	line-height: 3.125;
+	padding-left: 64px;
+	letter-spacing: 4px;
+}
 
+.display-none{
+	display: none; /*非表示設定*/
+}
 
 /*hero*/
-.hero-contents{
+
+.hero-contents {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
 
-.hero-title-box{
+.hero-title-box {
 	height: 40vh;
 	width: auto;
 	background-color: #F0D0E4;
 	text-align: center;
 }
 
-.hero-imgbox{
+.hero-imgbox {
 	height: 60vh;
 	width: auto;
 	background-color: #FAFBDF;
@@ -89,67 +108,68 @@ th,td{
 
 /*profile*/
 
-.profile-contents{
+.profile-contents {
 	padding: 100px 60px;
 	background-color: #E4EFB9;
 	display: flex;
 	flex-direction: column;
 }
 
-.profile-title{
+.profile-title {
 	order: 1;
 }
 
-.profile-imgbox{
+.profile-imgbox {
 	margin: 16px auto 40px;
 	order: 2;
 	height: 245px;
 	width: 381px;
 }
 
-.profile-textbox{
+.profile-textbox {
 	order: 3;
 }
 
 /*skills*/
-.skills-contents{
+
+.skills-contents {
 	padding: 100px 32px;
 	display: flex;
 	flex-direction: column;
 }
 
-.skills-title-box{
+.skills-title-box {
 	text-align: center;
 }
 
-.skills-content h3{
+.skills-content h3 {
 	border-bottom: 1px solid #707070;
 }
 
-.skills-content table{
+.skills-content table {
 	background-color: #FBF3EF;
 	margin-bottom: 32px;
 	width: 100%;
 }
 
 /*テーブルのスクロール設定*/
+
 @media only screen and (max-width: 665px) {
 	.skills-content table {
-	  white-space: nowrap;
-	  overflow-x: auto; 
-	  -webkit-overflow-scrolling: touch;
+		white-space: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
 	}
-  }
+}
 
-
-.skills-content th{
+.skills-content th {
 	text-align: left;
 	padding: 8px 32px;
 }
 
-
 /*garally*/
-.garally-contents{
+
+.garally-contents {
 	padding: 100px 60px;
 	background-color: #F8FAD4;
 	text-align: center;
@@ -157,17 +177,17 @@ th,td{
 	flex-direction: column;
 }
 
-.slide{
+.slide {
 	border: .8px solid #707070;
 	min-height: 427px;
 	position: relative;
 }
 
-.slide-img{
+.slide-img {
 	height: 70%;
 }
 
-.slide-text{
+.slide-text {
 	height: 30%;
 	width: 100%;
 	border-top: .8px solid #707070;
@@ -175,23 +195,26 @@ th,td{
 	bottom: 0;
 }
 
-.nonactive{
+.nonactive {
 	display: none;
 }
 
 /*contact*/
-.contact-contents{
+
+.contact-contents {
 	background-color: #F0D0E4;
 	text-align: center;
 	min-height: 200px;
 }
-.contact-contents{
+
+.contact-contents {
 	padding: 40px 0;
 	text-align: center;
 }
 
 /*footer*/
-.footer-contents{
+
+.footer-contents {
 	text-align: center;
 	border: .8px solid #707070;
 }
