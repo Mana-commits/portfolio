@@ -7,31 +7,42 @@
     <title>ManaFujisaka's Portfolio</title>
     <!--Stylesheet-->
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
     <!--navbar-->
-    <header>
-        <div class="navbar-contents" id="navbar">
-            <div class="navbar-contents-name center">
-                <h1>MANA FUJISAKA</h1>
-            </div>
-            <div class="humberger-wrap">
-                <a class="navbar-contents-humberger">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
-                </a>
-            </div>
-            <div class="navbar-slide display-none">
-                <ul>
-                    <li>PROFILE</li>
-                    <li>SKILLS</li>
-                    <li>GARALLY</li>
-                    <li>CONTACT</li>
-                </ul>
+    <header id="top">
+        <div class="navbar">
+            <div class="navbar-contents">
+                <div class="navbar-contents-name center">
+                    <h1>MANA FUJISAKA</h1>
+                </div>
+                <div class="humberger-wrap">
+                    <a class="navbar-contents-humberger">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </a>
+                </div>
+                <div class="navbar-slide display-none">
+                    <ul>
+                        <a href="#profile">
+                            <li>PROFILE</li>
+                        </a>
+                        <a href="#skills">
+                            <li>SKILLS</li>
+                        </a>
+                        <a href="#garally">
+                            <li>GARALLY</li>
+                        </a>
+                        <a href="#contact">
+                            <li>CONTACT</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -53,7 +64,7 @@
     <!--//hero-->
 
     <!--profile-->
-     <section class="profile">
+    <section class="profile" id="profile">
         <div class="profile-contents">
             <div class="profile-title">
                 <h1>PROFILE</h1>
@@ -88,7 +99,7 @@
     <!--//profile-->
 
     <!--skills-->
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills-contents">
             <div class="skills-title-box">
                 <div class="skills-title title">
@@ -185,7 +196,7 @@
     <!--//skills-->
 
     <!--garally-->
-    <section class="garally">
+    <section class="garally" id="garally">
         <div class="garally-contents">
             <div class="garally-title-box">
                 <div class="garally-title title">
@@ -201,35 +212,40 @@
                     <div class="slide-text">
                         <p>このポートフォリオです<br>
                             デザイン・コーディングを行いました<br>
-                        レスポンシブ対応しています</p>
-                            <p>【HTML/CSS/AdobeXD/jQuery】</p>
+                            レスポンシブ対応しています</p>
+                        <p>【HTML/CSS/AdobeXD/jQuery】</p>
                     </div>
                 </div>
                 <div class="slide" id="slide-second">
-                    <div class="slide-img slide-second"></div>
-                    <div class="slide-text">
-                        <p>山間小学校想定したLPデザイン<br>
-                            ペルソナ設定からFigmaを使用してデザインを行いました</p>
+                    <a href="https://drive.google.com/open?id=16EhjXN6QKuOJIXIY2acuAOy7v5NujPee" target="_blank">
+                        <div class="slide-img slide-second"></div>
+                        <div class="slide-text">
+                            <p>山間小学校想定したLPデザイン<br>
+                                ペルソナ設定からFigmaを使用してデザインを行いました</p>
                             <p>【Figma】</p>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="slide" id="slide-third">
-                    <div class="slide-img slide-third"></div>
-                    <div class="slide-text">
-                        <p>LPサイトコーディング<br>
-                            FLOWER様LPを参考にコーディングを行いました</p>
+                    <a href="https://mana-commits.github.io/moc-flower/" target="_blank">
+                        <div class="slide-img slide-third"></div>
+                        <div class="slide-text">
+                            <p>LPサイトコーディング<br>
+                                FLOWER様LPを参考にコーディングを行いました</p>
                             <p>【HTML/CSS/jQuery】</p>
-                        <a href="">Flower様サイトはこちらです</a>
-                    </div>
+                            <a href="https://flowr.is/" target="_blank"><u>Flower様サイトはこちらです</u></a>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="view-more btn"></div>
+            <div class="modal"></div>
         </div>
     </section>
     <!--//garally-->
 
     <!--contact-->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-contents">
             <div class="contact-title title">
                 <h1>CONTACT</h1>
@@ -243,7 +259,7 @@
 
     <footer>
         <div class="footer-contents">
-            <a href="#navbar">▲ BACK TO THE TOP ▲</a>
+            <a href="#top">▲ BACK TO THE TOP ▲</a>
         </div>
     </footer>
     <script type="text/javascript" src="javascript/jquery.js"></script>
