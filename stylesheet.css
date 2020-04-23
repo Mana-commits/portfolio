@@ -4,8 +4,14 @@ body {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 32px;
 	letter-spacing: 20px;
+}
+
+@media screen and (min-width:768px){
+	h1{
+		font-size: 40px;
+	}
 }
 
 h2, h3 {
@@ -46,7 +52,7 @@ a {
 }
 
 .navbar-contents-name {
-	line-height: 53px;
+	line-height: normal;
 	margin-left: 64px;
 	width: 50%;
 }
@@ -55,6 +61,8 @@ a {
 	.navbar-contents-name {
 		width: 100%;
 		text-align: center;
+		line-height: 53px;
+		
 	}
 }
 
@@ -64,8 +72,8 @@ a {
 
 .humberger-wrap {
 	position: absolute;
-	top: 56px;
-	right: 56px;
+	top: 24px;
+	right: 24px;
 	cursor: pointer;
 	position: fixed;
 	z-index: 99;
@@ -252,13 +260,27 @@ a {
 	flex-direction: column;
 }
 
+@media screen and (min-width:768px) {
+	.skills-content-box {
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+}
+
 .skills-title-box {
 	text-align: center;
 }
 
 @media screen and (min-width:768px) {
-	#webdev, #tools, #etc {
-		flex-basis: 100%;
+	#webdev, #tools {
+		width: 50%;
+		box-sizing: border-box;
+	}
+	#etc{
+		width: 100%;
+	}
+	#tools{
+		padding-left: 16px;
 	}
 }
 
@@ -314,9 +336,14 @@ a {
 .slide {
 	border: 1px solid #707070;
 	min-height: 400px;
-	min-width: 316px;
 	position: relative;
 	margin-bottom: 24px;
+}
+
+@media screen and (min-width:768px){
+	.slide{
+	min-width: 316px;
+	}
 }
 
 .slide-img{
