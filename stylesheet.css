@@ -387,6 +387,11 @@ a {
 	padding: 0 16px;
 	text-align: start;
 	font-size: 14px;
+	
+}
+
+.slide-text p {
+	letter-spacing: 2px;
 }
 
 
