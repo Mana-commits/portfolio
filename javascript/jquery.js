@@ -13,7 +13,9 @@ $('a[href^="#"]').click(function(){ //#で始まるリンクをクリックし�
     return false;
     });
 
-$('.humberger-wrap').click(function(){
+//ハンバーガーメニュー開閉
+$('.humberger-wrap').on('click',function(){
+
    
    if($('.navbar-slide').hasClass('display-none')){
         $('.navbar-slide').removeClass('display-none');
@@ -22,5 +24,10 @@ $('.humberger-wrap').click(function(){
         $('.navbar-slide').addClass('display-none');    
 
     }});
+
+//ハンバーガーメニュー閉じる
+$('#menu a[href]').on('click', function() {
+    $('.humberger-wrap').trigger('click');
+});
 
 });
