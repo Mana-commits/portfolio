@@ -309,26 +309,26 @@ a {
 	padding: 8px 32px;
 }
 
-/*garally*/
+/*gallery*/
 
-.garally-contents {
+.gallery-contents {
 	padding: 100px 60px;
 	background-color: #F8FAD4;
 	text-align: center;
 }
 
-.garally-title-box {
+.gallery-title-box {
 	margin-bottom: 72px;
 }
 
-.garally-slides {
+.gallery-slides {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
 @media screen and (min-width:768px){
-	.garally-slides{
+	.gallery-slides{
 		flex-direction: row;
 	}
 }
