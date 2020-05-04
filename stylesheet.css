@@ -69,7 +69,7 @@ a {
 	font-size: 24px;
 }
 
-.humberger-wrap {
+.hamburger-wrap {
 	position: absolute;
 	top: 24px;
 	right: 24px;
@@ -79,7 +79,7 @@ a {
 }
 
 @media screen and (min-width:768px) {
-	.humberger-wrap {
+	.hamburger-wrap {
 		position: absolute;
 		top: 32px;
 		position: fixed;
@@ -87,19 +87,19 @@ a {
 	}
 }
 
-.navbar-contents-humberger {
+.navbar-contents-hamburger {
 	position: relative;
 	width: 32px;
 	height: 32px;
 }
 
-.navbar-contents-humberger, .navbar-contents-humberger span {
+.navbar-contents-hamburger, .navbar-contents-hamburger span {
 	display: inline-block;
 	box-sizing: border-box;
 	transition: all .4s;
 }
 
-.navbar-contents-humberger span {
+.navbar-contents-hamburger span {
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -107,12 +107,12 @@ a {
 	background-color: #707070;
 }
 
-.navbar-contents-humberger span.middle {
+.navbar-contents-hamburger span.middle {
 	margin-top: 8px;
 	background-color: #E4EFB9;
 }
 
-.navbar-contents-humberger span.bottom {
+.navbar-contents-hamburger span.bottom {
 	margin-top: 16px;
 }
 
@@ -120,6 +120,7 @@ a {
 	width: 50vw;
 	background-color: #fff;
 	box-sizing: border-box;
+	display: none;
 }
 
 .navbar-slide ul {
