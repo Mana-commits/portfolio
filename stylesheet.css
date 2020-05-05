@@ -42,7 +42,7 @@ a {
 }
 
 .navbar-contents {
-	background-color: #fff;
+	background-color: #F8FAD4;
 	opacity: .8;
 	display: flex;
 	flex-direction: row;
@@ -53,13 +53,11 @@ a {
 
 .navbar-contents-name {
 	line-height: normal;
-	margin-left: 64px;
-	width: 50%;
+	flex-grow: 5;
 }
 
 @media screen and (min-width:768px) {
 	.navbar-contents-name {
-		width: 100%;
 		text-align: center;
 		line-height: 53px;
 	}
@@ -80,12 +78,11 @@ a {
 
 @media screen and (min-width:768px) {
 	.hamburger-wrap {
-		position: absolute;
-		top: 32px;
-		position: fixed;
-		z-index: 99;
+		display: none;
 	}
 }
+
+/*SP用ハンバーガーメニュー*/
 
 .navbar-contents-hamburger {
 	position: relative;
@@ -116,6 +113,8 @@ a {
 	margin-top: 16px;
 }
 
+/*SP用ナビバースライド*/
+
 .navbar-slide {
 	width: 50vw;
 	background-color: #fff;
@@ -132,7 +131,38 @@ a {
 
 .navbar-slide ul a {
 	text-decoration: none;
-	color: #222
+	color: #222 transition: all .4s;
+}
+
+/*WEB用ナビバーメニュー*/
+
+.navbar-contents-menu {
+	display: none;
+}
+
+@media screen and (min-width:768px) {
+	.navbar-contents-menu {
+		display: block;
+		margin: auto 80px auto 0;
+	}
+	.navbar-contents-menu ul {
+		margin-block-start: 0;
+	}
+	.navbar-contents-menu ul li {
+		float: left;
+		list-style-type: none;
+		margin-right: 1.5em;
+	}
+	.navbar-contents-menu a {
+		font-size: xx-small;
+		letter-spacing: 1px;
+	}
+	.navbar-contents-menu li {
+		transition: ease-in;
+	}
+	.navbar-contents-menu li:hover {
+		border-bottom: 1px solid #707070;
+	}
 }
 
 .display-none {
