@@ -1,5 +1,5 @@
 body {
-	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+	font-family: 'Asap', 'YuGothic', 'Yu Gothic medium', 'Hiragino Sans', 'sans-serif';
 	color: #707070;
 }
 
@@ -319,12 +319,15 @@ a {
 /*skills*/
 
 .skills-contents {
-	padding: 100px 32px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .skills-content-box {
 	display: flex;
 	flex-direction: column;
+	padding-right: 32px;
+	padding-left: 32px;
 }
 
 @media screen and (min-width:768px) {
@@ -379,7 +382,8 @@ a {
 /*gallery*/
 
 .gallery-contents {
-	padding: 100px 60px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-color: #F8FAD4;
 	text-align: center;
 }
@@ -392,6 +396,9 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	padding-right: 42px;
+	padding-left: 42px;
+
 }
 
 @media screen and (min-width:768px) {
@@ -461,7 +468,8 @@ a {
 /*caption*/
 
 .caption-contents {
-	padding: 60px 60px 100px 60px;
+	padding-top: 60px;
+	padding-bottom: 100px;
 	background-color: #F8FAD4;
 	box-sizing: border-box;
 }
@@ -472,6 +480,8 @@ a {
 }
 
 .caption-content-box {
+	padding-right: 60px;
+	padding-left: 60px;
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
