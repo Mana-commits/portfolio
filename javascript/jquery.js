@@ -3,8 +3,8 @@ $(function(){
 //スクロールトップ
 $('a[href^="#"]').click(function(){ //#で始まるリンク元をクリックしたとき
     var speed = 400; //スクロールされるスピード
-    var href = $(this).attr('href');　//クリックしたリンク元のhref要素（リンク先id）
-    var target = $(href == "#" || href == "" ?'html' :　href);　//#のみまたは空だった場合はhtml,そうでなければリンク先id
+    var href = $(this).attr('href');//クリックしたリンク元のhref要素（リンク先id）
+    var target = $(href == "#" || href == "" ?'html' :　href);//#のみまたは空だった場合はhtml,そうでなければリンク先id
     var position = target.offset().top;　//topまでの距離
     $('body,html').animate({
         scrollTop: position 
