@@ -118,8 +118,8 @@ a {
 /*SP用ナビバースライド*/
 
 .navbar-slide {
-	width: 50vw;
-	background-color: #fff;
+	width: 100vw;
+	background-color: #E4EFB9;
 	box-sizing: border-box;
 	display: none;
 }
@@ -131,11 +131,12 @@ a {
 	letter-spacing: 4px;
 }
 
-.navbar-slide ul a {
+.navbar-slide ul a li {
 	text-decoration: none;
 	color: #222;
-	transition: all .4s;
+	
 }
+
 
 /*WEB用ナビバーメニュー*/
 
@@ -161,10 +162,21 @@ a {
 		letter-spacing: 1px;
 	}
 	.navbar-contents-menu li {
-		transition: ease-in;
+		position: relative;
+		display: inline-block;
 	}
-	.navbar-contents-menu li:hover {
-		border-bottom: 1px solid #707070;
+	.navbar-contents-menu li::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: '';
+		width: 0;
+		height: 1px;
+		background-color: #707070;
+		transition: .3s;
+	}
+	.navbar-contents-menu li:hover::after {
+		width: 100%;
 	}
 }
 
@@ -181,7 +193,6 @@ a {
 	position: relative;
 }
 
-
 .key-img {
 	background-image: url(img/top/key.png);
 	background-repeat: no-repeat;
@@ -190,7 +201,6 @@ a {
 	width: 100%;
 	height: 160px;
 	margin: 0 auto 0 0;
-	
 }
 
 .key-text-box {
@@ -210,14 +220,11 @@ a {
 	color: #fafafa;
 }
 
-
 @media screen and (min-width:768px) {
-
 	.key-img-box {
 		position: relative;
 		height: 263px;
 	}
-
 	.key-img {
 		width: 800px;
 		height: 331px;
@@ -226,25 +233,23 @@ a {
 		left: 0;
 		bottom: -80px;
 	}
-
 	.key-text-box {
-	display: inline;
-	position: absolute;
-	bottom: 32px;
-	right: 8%;
-	background-color: transparent;
+		display: inline;
+		position: absolute;
+		bottom: 32px;
+		right: 8%;
+		background-color: transparent;
 	}
-	.key-text-box p{
+	.key-text-box p {
 		color: #707070;
 	}
 }
-	
 
 /*scroll-section*/
 
 .scroll-content {
 	text-align: center;
-	margin:	160px auto 100px auto;
+	margin: 160px auto 100px auto;
 }
 
 .scroll-text p {
@@ -287,7 +292,6 @@ a {
 	background-position: center;
 }
 
-
 .profile-text-box {
 	padding: 0px 48px;
 	order: 2;
@@ -297,18 +301,14 @@ a {
 	.profile-text-box {
 		padding-right: 0;
 	}
-	
 	.profile-text-main {
 		max-width: 480px;
 	}
-
-	.profile-text-main p{
+	.profile-text-main p {
 		margin-block-start: 0;
 	}
-
-	.profile-img-box{
-	
-	width: 245px;
+	.profile-img-box {
+		width: 245px;
 	}
 }
 
@@ -398,7 +398,6 @@ a {
 	justify-content: space-around;
 	padding-right: 42px;
 	padding-left: 42px;
-
 }
 
 @media screen and (min-width:768px) {
@@ -465,7 +464,7 @@ a {
 	letter-spacing: 2px;
 }
 
-.more-btn-box{
+.more-btn-box {
 	margin-top: 24px;
 }
 
@@ -478,15 +477,15 @@ a {
 	color: #FFF;
 	background: #00bcd4;
 	transition: .4s;
-  }
-  
-  .btn-flat-logo:hover {
-	background: #1ec7bb;
-  }
+}
 
-  .btn-flat-logo:first-child{
-	  margin-right: 4em;
-  }
+.btn-flat-logo:hover {
+	background: #1ec7bb;
+}
+
+.btn-flat-logo:first-child {
+	margin-right: 4em;
+}
 
 /*caption*/
 
