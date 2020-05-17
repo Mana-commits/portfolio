@@ -465,6 +465,29 @@ a {
 	letter-spacing: 2px;
 }
 
+.more-btn-box{
+	margin-top: 24px;
+}
+
+.btn-flat-logo {
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0.8em 0.8em;
+	text-decoration: none;
+	color: #FFF;
+	background: #00bcd4;
+	transition: .4s;
+  }
+  
+  .btn-flat-logo:hover {
+	background: #1ec7bb;
+  }
+
+  .btn-flat-logo:first-child{
+	  margin-right: 4em;
+  }
+
 /*caption*/
 
 .caption-contents {
